@@ -1,0 +1,9 @@
+Package: daq
+Version: 0.1
+Date: 2008-12-01
+Title: Base clas for data acquisition.
+Author: Paulo José Saiz Jabardo <pjabardo@ipt.br>
+Maintainer: Paulo José Saiz Jabardo <pjabardo@ipt.br>
+Depends: R (>= 2.5.0)
+Description: Basic functions that perform data acquisition. 
+License: GPL (>= 2)
