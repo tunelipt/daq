@@ -3,17 +3,17 @@ openDev <- function(...){
   stop("Deveria ser implementado por cada dispositivo")
 }
 
-configDev <- function(dev, ...)
-  UseMethod("configDev", dev)
+daqConfig <- function(dev, ...)
+  UseMethod("daqConfig", dev)
 
-startDaq <- function(dev, ...)
-  UseMethod("startDaq", dev)
+daqStart <- function(dev, ...)
+  UseMethod("daqStart", dev)
 
-finishDaq <- function(dev, ...)
-  UseMethod("finishDaq", dev)
+daqFinish <- function(dev, ...)
+  UseMethod("daqFinish", dev)
 
-readDaq <- function(dev, ...)
-  UseMethod("readDaq", dev)
+daqRead <- function(dev, ...)
+  UseMethod("daqRead", dev)
 
 isDaqFinished <- function(dev, ...)
   UseMethod("isDaqFinished", dev)
@@ -21,28 +21,33 @@ isDaqFinished <- function(dev, ...)
 samplesRead <- function(dev, ...)
   UseMethod("samplesRead", dev)
 
-acquire <- function(dev, ...)
-  UseMethod("acquire", dev)
+daqAcquire <- function(dev, ...)
+  UseMethod("daqAcquire", dev)
 
-closeDev <- function(dev)
-  UseMethod("closeDev", dev)
+daqClose <- function(dev)
+  UseMethod("daqClose", dev)
+
+isDaqOpen <- function(dev)
+  UseMethod("isDaqOpen", dev)
 
   
 
-configDev.default <- function(dev, ...)
+daqConfig.default <- function(dev, ...)
   stop("O dispositivo deve estar implementado")
-startDaq <- function(dev, ...)
+daqStart.default <- function(dev, ...)
   stop("O dispositivo deve estar implementado")
-finishDaq <- function(dev, ...)
+daqFinish.default <- function(dev, ...)
   stop("O dispositivo deve estar implementado")
-readDaq <- function(dev, ...)
+daqRead.default <- function(dev, ...)
   stop("O dispositivo deve estar implementado")
-isDaqFinishedDaq <- function(dev, ...)
+isDaqFinishedDaq.default <- function(dev, ...)
   stop("O dispositivo deve estar implementado")
-samplesRead <- function(dev, ...)
+samplesRead.default <- function(dev, ...)
   stop("O dispositivo deve estar implementado")
-acquire <- function(dev, ...)
+daqAcquire.default <- function(dev, ...)
   stop("O dispositivo deve estar implementado")
-closeDev <- function(dev, ...)
+daqClose.default <- function(dev, ...)
+  stop("O dispositivo deve estar implementado")
+isDaqOpen.default <- function(dev)
   stop("O dispositivo deve estar implementado")
 
