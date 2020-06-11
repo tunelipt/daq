@@ -88,7 +88,7 @@ daqRead.default <- function(dev, ...)
   stop("O dispositivo deve estar implementado")
 
 #' @export
-isDaqFinishedDaq.default <- function(dev, ...)
+isDaqFinished.default <- function(dev, ...)
   stop("O dispositivo deve estar implementado")
 
 #' @export

@@ -8,5 +8,7 @@ Depends:
     R (>= 2.5.0)
 Description: Basic functions that perform data acquisition.
 License: GPL (>= 2)
+Encoding: UTF-8
 Collate:
     'daq.R'
+RoxygenNote: 7.1.0
